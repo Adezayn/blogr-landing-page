@@ -1,0 +1,148 @@
+*,body{
+    margin:0;
+    padding:0;
+    max-width:100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    width:100%;
+}
+header{
+    background-image: url("images/bg-pattern-intro.svg"), 
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: 22% 51%;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 135px;
+    color:#fff;
+    height:500px;
+}
+header button{
+    width:130px;
+    /*outline:none;*/
+    padding:10px;
+    border-radius:20px;
+}
+
+.details{
+    text-align: center;
+}
+
+nav{
+    width: 90%;
+    margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list-list{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-list-list li{
+    list-style: none;
+}
+.nav-list-list > li{
+    padding:0 30px ;
+}
+.drop-down{
+    background:#fff;
+    color:#000;
+    padding:10px;
+    z-index: 2;
+    display: none;
+}
+.nav-list-list > li:hover{
+   cursor: pointer;
+   border-bottom: 1px solid #fff;
+}
+.first-section-img{
+    width:100%;
+    overflow: hidden;
+}
+.first-section .second-info{
+    flex-direction: row;
+}
+.second-info{
+    display: flex;
+}
+.second-section{
+    padding:50px 0;
+}
+.second-section .second-info{
+    background: url(images/bg-pattern-circles.svg), hsl(237, 17%, 21%);
+    background-position: -42% 85%;
+    background-repeat: no-repeat;
+    color:#fff;
+    position: relative;
+}
+.second-section-text{
+    padding:100px;
+    /*width:50%;*/
+    flex-basis: 50%;
+    
+}
+.second-section-img{
+    position: relative;
+    /*width:100%;*/
+    flex-basis: 50%;
+}
+.second-section-img img{
+    position:absolute;
+    bottom:-30%;
+}
+
+.third-section-img{
+    width:100%;
+    position: relative;
+    left:-25%;
+}
+
+footer{
+    padding:20px 0;
+    background-color: #171827;
+    color:#fff;
+}
+.footer-info{
+    display:flex;
+    justify-content: space-around;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width:750px){
+    .nav-list{
+        display: none;
+    }
+    .second-info{
+        flex-direction: column;
+    }
+    .first-section .second-info{
+        flex-direction: column-reverse;
+    }
+ footer{
+    border-top-right-radius: 50%;
+ }
+ .footer-info{
+     flex-direction:column;
+ }
+
+.second-section-img{
+    position: relative;
+}
+.second-section-img img{
+    position: absolute;
+    bottom:-90%;
+    
+}
+.third-section-img{
+    width:50%;
+    position: static;
+}
+}
